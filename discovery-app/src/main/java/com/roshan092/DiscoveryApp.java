@@ -3,6 +3,7 @@ package com.roshan092;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
 import org.springframework.context.annotation.Bean;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -14,10 +15,11 @@ import java.net.URI;
 
 @SpringBootApplication
 @RestController
+@EnableCircuitBreaker
 public class DiscoveryApp {
 
     @Autowired
-    private RestTemplate restTemplate;
+    private DiscoveryService discoveryService;
 
     @Bean
     RestTemplate restTemplate() {
@@ -25,9 +27,11 @@ public class DiscoveryApp {
     }
 
     @GetMapping("/topgrossing/{year}")
-    String getTopGrossingMovie(@PathVariable Integer year) {
-        URI uri = UriComponentsBuilder.fromUriString("http://localhost:8080/movies/" + year).build().toUri();
-        return restTemplate.getForObject(uri, String.class);
+    public TopGrossing getTopGrossingMovie(@PathVariable Integer year) {
+        return TopGrossing.builder()
+                .movie(discoveryService.getTopGrossingMovie(year))
+                .song(discoveryService.getTopGrossingSong(year))
+                .build();
     }
 
     public static void main(String[] args) {

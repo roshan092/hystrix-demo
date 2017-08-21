@@ -8,5 +8,6 @@
         <module>discovery-app</module>
         <module>movie-app</module>
         <module>dashboard-app</module>
+        <module>song-app</module>
     </modules>
 </project>
