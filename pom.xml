@@ -7,5 +7,6 @@
   <modules>
     <module>discovery-app</module>
     <module>movie-app</module>
+    <module>dashboardapp</module>
   </modules>
 </project>
