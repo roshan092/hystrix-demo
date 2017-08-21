@@ -1,4 +1,4 @@
-package movie;
+package com.roshan092;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

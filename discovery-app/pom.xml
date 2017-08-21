@@ -3,13 +3,13 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>cat.pseudocodi</groupId>
+    <groupId>com.roshan092</groupId>
     <artifactId>discovery-app</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>movie-app</name>
-    <description>Demo project for Spring Boot</description>
+    <name>discovery-app</name>
+    <description>Demo project for Hystrix dashboard which consumes top grossing movies</description>
 
     <parent>
         <groupId>org.springframework.boot</groupId>

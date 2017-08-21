@@ -1,4 +1,4 @@
-package movie;
+package com.roshan092;
 
 import com.netflix.hystrix.contrib.javanica.aop.aspectj.HystrixCommandAspect;
 import org.junit.Assert;

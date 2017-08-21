@@ -1,4 +1,4 @@
-package movie;
+package com.roshan092;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
