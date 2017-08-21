@@ -15,3 +15,8 @@
 - Configuration keys (https://github.com/Netflix/Hystrix/wiki/Configuration)
 - Using the dashboard (http://docs.pivotal.io/spring-cloud-services/1-3/common/circuit-breaker/using-the-dashboard.html)
 
+#Important URLS
+- Movies Service Host (http://localhost:8080/movies/{year}). year pass: 2007-2016
+- Movies consumer (http://localhost:9090/topgrossing/2016)
+- Hystrix Dashboard (http://localhost:7070)
+
