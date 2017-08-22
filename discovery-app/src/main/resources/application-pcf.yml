@@ -1,0 +1,6 @@
+movies:
+  base:
+    url: https://movie-app-rjl.cfapps.io/
+songs:
+  base:
+    url: https://song-app-rjl.cfapps.io/

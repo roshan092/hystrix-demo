@@ -3,3 +3,9 @@ server:
 management:
   security:
     enabled: false
+movies:
+  base:
+    url: http://localhost:9090/
+songs:
+  base:
+    url: http://localhost:9091/
