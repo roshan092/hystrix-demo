@@ -1,5 +1,5 @@
 #!/bin/bash
-for i in {1..500}
+for i in {1..100}
 do
     YEAR=$(( $RANDOM % 10 + 1998 ))
     URL=https://discovery-app-rjl.cfapps.io/topgrossing/${YEAR}
