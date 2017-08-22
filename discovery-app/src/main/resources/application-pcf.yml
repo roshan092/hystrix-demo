@@ -4,3 +4,9 @@ movies:
 songs:
   base:
     url: https://song-app-rjl.cfapps.io/
+spring:
+  application:
+    name: discovery-app-rjl
+  cloud:
+    services:
+      registrationMethod: route
