@@ -3,3 +3,5 @@ applications:
     buildpack: https://github.com/roshan092/java-buildpack.git
     memory: 512M
     path: target/movie-app-0.0.1-SNAPSHOT.jar
+    env:
+      SPRING_PROFILES_ACTIVE: pcf
