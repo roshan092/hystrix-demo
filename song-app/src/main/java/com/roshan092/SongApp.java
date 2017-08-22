@@ -13,10 +13,6 @@ public class SongApp {
     @GetMapping("/songs/{year}")
     String getTopGrossingSongs(@PathVariable Integer year) {
         switch (year) {
-            case 2016:
-                return "Love Yourself";
-            case 2015:
-                return "Uptown Funk";
             case 2014:
                 return "Happy";
             case 2013:
