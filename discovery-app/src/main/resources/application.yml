@@ -3,6 +3,7 @@ server:
 management:
   security:
     enabled: false
+  context-path: /private
 movies:
   base:
     url: http://localhost:9090/
