@@ -17,16 +17,14 @@ import java.net.URI;
 @SpringBootApplication
 @RestController
 @EnableCircuitBreaker
-@EnableDiscoveryClient
 public class DiscoveryApp {
-
-    @Autowired
-    private DiscoveryService discoveryService;
-
     @Bean
     RestTemplate restTemplate() {
         return new RestTemplate();
     }
+
+    @Autowired
+    private DiscoveryService discoveryService;
 
     @GetMapping("/topgrossing/{year}")
     public TopGrossing getTopGrossingMovie(@PathVariable Integer year) {
